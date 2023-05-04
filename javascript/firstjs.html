@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // var a,b,c;
+    // a=10;
+    // b=20;
+    // c = a + b;
+    // document.write("<h1>sum of a & b are : " +c+ "</h1>");
+
+    // document.write(`<h1> sum of a & b are : ${c} </h1>`);
+
+    // document.getElementById('test').innerHTML = 'i am javascript';
+    // document.getElementById('test').style.color = "red";
+    // document.getElementById('test').style.backgroundColor = "blue";
+    // document.getElementById('test').style.fontSize = "200%";
+
+    
+
+
+    </script>
+
+
+<button id="plus" onclick="plus()">+</button>
+<h1 id="number">0</h1>
+<button id="minus" onclick="minus()">-</button>
+<script>
+    function plus()
+    {
+        var number = document.getElementById("number").innerHTML;
+        number++;
+        document.getElementById("number").innerHTML=number;
+    }
+    function minus()
+    {
+        var number = document.getElementById("number").innerHTML;
+        number --;
+        document.getElementById("number").innerHTML=number;
+    }
+</script>
+
+<button id="plus1" onclick="plus1()">+</button>
+<input type="number" id="number1" value= "0">
+<button id="minus1" onclick="minus1()">-</button>
+
+<script>
+    function plus1()
+    {
+        var number1 = document.getElementById("number1").value;
+        number1++;
+        document.getElementById("number1").value=number1;
+    }
+    function minus1(){
+        var number1 = document.getElementById("number1").value;
+        number1--;
+        if(number1<0){
+        }
+        else
+        {
+            document.getElementById("number1").value = number1;
+        }
+    }
+</script>
+<h1 id="dhruv">Virani</h1>
+
+<input type="text" id="demo" onkeypress="myfuncation()">
+<script>
+    function myfuncation()
+    {
+        document.getElementById('demo').style.color = "red";
+        document.getElementById('demo').style.textTransform = "uppercase"
+
+    }
+</script>
+</body>
+</html>

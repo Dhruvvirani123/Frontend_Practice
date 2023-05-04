@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main
+        {
+            display: grid;
+            border: 4px solid black;
+            grid-template-columns: 0.50fr 1fr;
+            grid-template-rows: 60px 60px 100px 100px;
+            grid-gap: 10px;
+            font-size: 20px;
+        }
+        .header
+        {
+            background-color: aqua;
+            grid-column: 1/-1;
+        }
+        .nav
+        {
+            background-color: black;
+            grid-column: 1/-1;
+        }
+        .aside
+        {
+            background-color: blueviolet;
+            grid-row: 3/5;
+        }
+        .content
+        {
+            background-color: violet;
+        }
+        .section
+        {
+            background-color: yellowgreen;
+        }
+        .footer
+        {
+            background-color: tomato;
+            grid-column: 1/-1;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="aside">Aside</div>
+        <div class="content">Content</div>
+        <div class="section">Section</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

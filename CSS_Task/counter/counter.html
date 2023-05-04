@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            counter-reset: x;
+            margin: 0;
+        }
+        p
+        {
+            display: inline;
+            margin: 0;
+        }
+        p::after
+        {
+            counter-increment: x;
+            content: "["counter(x)"]";
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam adipisci nulla officiis molestias nihil amet eligendi, molestiae dolor accusamus officia architecto fugit repellat perferendis iure soluta rerum consectetur tenetur sed.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti magni labore voluptate numquam possimus similique assumenda praesentium fuga odit recusandae, modi reprehenderit eveniet tempora, placeat ullam perferendis aliquid debitis aut.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis culpa provident dolores? Eveniet perferendis nesciunt libero saepe, accusamus laboriosam laudantium dolorum, reiciendis labore modi fugiat velit fuga, ipsum pariatur facilis.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima amet tempore quam autem laboriosam sunt aliquam, quas perferendis? Ipsum velit totam sunt reprehenderit fuga sequi quae voluptatum odio labore non?</p>
+</body>
+</html>

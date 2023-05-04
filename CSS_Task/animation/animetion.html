@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-color: rgb(37, 37, 37);
+            margin: 15%;
+        }
+        .x
+        {
+            height: 150px;
+            width: 150px;
+            border: 5px solid orange;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: transparent;
+            border-radius: 50%;
+            animation-name: demo;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            
+        }
+        .y
+        {
+            height: 150px;
+            width: 150px;
+            border: 5px solid white;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: transparent;
+            margin-top: 2px;
+            border-radius: 50%;
+            animation-name: demo;
+            animation-duration: 22s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        .z
+        {
+            height: 150px;
+            width: 150px;
+            border: 5px solid green;
+            border-left: transparent;
+            border-right: transparent;
+            border-bottom: transparent;
+            margin-top: 2px;
+            border-radius: 50%;
+            animation-name: demo;
+            animation-duration: 0.5s;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes demo
+        {
+            0%
+            {
+                transform: rotate(0deg);
+                
+            }
+            100%
+            {
+                transform: rotate(360deg);
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="z">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

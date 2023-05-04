@@ -1,0 +1,11 @@
+*
+{
+    background-color: red;
+    box-sizing: border-box;
+}
+.main
+{
+    font-size: 100px;
+    background-color: red;
+    text-align: center;
+}
